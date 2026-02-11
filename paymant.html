@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BuyBit | Payment</title>
+
+<style>
+:root{
+    --light:#EAEFEF;
+    --soft:#BFC9D1;
+    --dark:#2F3E46;
+    --accent:#F28C48;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,var(--soft),var(--light));
+    color:var(--dark);
+}
+
+/* NAVBAR */
+header{
+    background:white;
+    padding:18px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+header h1{
+    margin:0;
+    color:var(--dark);
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:30px;
+    color:var(--dark);
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--accent);
+}
+
+/* PAYMENT CARD */
+.payment-container{
+    max-width:650px;
+    margin:70px auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+.payment-container h2{
+    margin-bottom:10px;
+    font-size:28px;
+}
+
+.payment-container p{
+    margin-bottom:15px;
+    opacity:0.8;
+}
+
+.qr-box img{
+    width:250px;
+    border-radius:15px;
+    margin:25px 0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.details{
+    font-size:15px;
+    margin-bottom:25px;
+}
+
+/* FORM */
+.form-box{
+    text-align:left;
+    margin-top:20px;
+}
+
+.form-box label{
+    font-weight:600;
+    display:block;
+    margin:12px 0 6px;
+}
+
+.form-box input,
+.form-box textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    transition:0.3s;
+}
+
+.form-box input:focus,
+.form-box textarea:focus{
+    border-color:var(--accent);
+    box-shadow:0 0 10px rgba(242,140,72,0.2);
+}
+
+.form-box textarea{
+    resize:none;
+}
+
+/* BUTTON */
+button{
+    margin-top:20px;
+    padding:14px;
+    width:100%;
+    border:none;
+    background:var(--accent);
+    color:white;
+    font-size:16px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(242,140,72,0.4);
+}
+
+/* NOTE BOX */
+.note{
+    margin-top:25px;
+    background:var(--soft);
+    padding:15px;
+    border-radius:12px;
+    font-size:14px;
+}
+
+/* FOOTER */
+footer{
+    background:var(--dark);
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🛒 BuyBit</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+    </nav>
+</header>
+
+<div class="payment-container">
+    <h2>Complete Your Payment</h2>
+    <p>Scan the QR code and pay using any UPI app</p>
+
+    <div class="qr-box">
+        <img src="QR.jpeg" alt="UPI QR Code">
+    </div>
+
+    <div class="details">
+        <p><strong>UPI ID:</strong> shlokyt@fam</p>
+        <p><strong>Name:</strong> BuyBit Store(shlok Patel)</p>
+    </div>
+
+    <div class="note">
+        ⚠ After Paymant , you Send your screenshot In Discord and your product will be delivered within 1–24 hours.
+    </div>
+</div>
+
+<footer>
+    © 2026 BuyBit — All Rights Reserved
+</footer>
+
+</body>
+</html>

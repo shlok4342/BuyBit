@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BuyBit - Products</title>
+
+<style>
+:root{
+    --light:#EAEFEF;
+    --soft:#BFC9D1;
+    --dark:#2F3E46;
+    --accent:#F28C48;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:var(--light);
+    color:var(--dark);
+}
+
+/* NAVBAR */
+header{
+    background:white;
+    padding:18px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+header h1{
+    margin:0;
+    color:var(--dark);
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:30px;
+    color:var(--dark);
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--accent);
+}
+
+/* CONTAINER */
+.container{
+    padding:60px;
+}
+
+.container h2{
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+/* PRODUCTS GRID */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.05);
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.card h3{
+    margin:15px 0 10px;
+}
+
+.price{
+    color:var(--accent);
+    font-size:18px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* BUTTON */
+button{
+    margin-top:15px;
+    padding:12px 20px;
+    border:none;
+    background:var(--accent);
+    color:white;
+    font-size:15px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(242,140,72,0.4);
+}
+
+/* FOOTER */
+footer{
+    background:var(--dark);
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🛒 BuyBit</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Our Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="MInecraft id 2.png">
+            <h3>Mcfa Diamond Tier</h3>
+            <p>🔐 FA (Email + Password)</p>
+            <p class="price">1x - ₹699<br>3x - ₹1,999</p>
+            <button onclick="window.location.href='paymant.html'">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="MInecraft id 2.png">
+            <h3>Mcfa Netherite Tier</h3>
+            <p>🔐 FA Unbanned + Capes</p>
+            <p class="price">1x - ₹759<br>3x - ₹2,199</p>
+            <button onclick="window.location.href='paymant.html'">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="discord-server-boost.png">
+            <h3>DC Server Boosts</h3>
+            <p>Boost for 1 or 2 months</p>
+            <p class="price">14× 1 Month – ₹299<br>14× 2 Months – ₹399</p>
+            <button onclick="window.location.href='paymant.html'">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="nitro id 2.png">
+            <h3>Nitro ID</h3>
+            <p>3–4 Month Nitro</p>
+            <p class="price">₹229</p>
+            <button onclick="window.location.href='paymant.html'">Buy Now</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 BuyBit | Contact: Shlok4342@gmail.com
+</footer>
+
+</body>
+</html>
